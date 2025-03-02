@@ -1,8 +1,17 @@
+import SimluationBoard from './SImulationBoard';
+import styled from 'styled-components';
+
+const SimulationViewWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const SimulationView = () => {
   return (
-    <div>
-      <h1>Simulation View</h1>
-    </div>
-  )
-}
-export default SimulationView
+    <SimulationViewWrapper>
+      <SimluationBoard></SimluationBoard>
+    </SimulationViewWrapper>
+  );
+};
+export default SimulationView;
