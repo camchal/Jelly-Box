@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SimulationContainer from './SimulationContainer';
 
 const StyledSimulationBoard = styled.div`
   display: flex;
@@ -15,6 +16,10 @@ const SimluationBoard = () => {
     <StyledSimulationBoard>
       <h1>Simulation Board</h1>
       <div>Simulation Board Content</div>
+      <SimulationContainer
+        NumParticles={5}
+        ParticleSize={1}
+      ></SimulationContainer>
     </StyledSimulationBoard>
   );
 };

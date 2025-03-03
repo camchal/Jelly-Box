@@ -1,10 +1,14 @@
+import SimulationCanvas from './SimulationCanvas.tsx';
+
 interface SimulationContainerProps {
-    NumParticles: number;
-    ParticleSize: number;
+  NumParticles: number;
+  ParticleSize: number;
 }
 const SimulationContainer = (props: SimulationContainerProps) => {
-  return <> 
-  <canvas></canvas>
-  </>;
+  return (
+    <>
+      <SimulationCanvas></SimulationCanvas>
+    </>
+  );
 };
 export default SimulationContainer;
