@@ -7,7 +7,11 @@ interface SimulationContainerProps {
 const SimulationContainer = (props: SimulationContainerProps) => {
   return (
     <>
-      <SimulationCanvas></SimulationCanvas>
+      <SimulationCanvas
+        height={400}
+        width={800}
+        draw={() => {}}
+      ></SimulationCanvas>
     </>
   );
 };
